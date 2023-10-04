@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;  /* Added to ensure content doesn't hide behind the fixed header */
+}
+
+header {
+    background-color: #FAB62B;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Esto centrará el div hijo */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header > div {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav a, footer a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+}
+
+a, .share-section a {
+    color: #0773e7;
+    text-decoration: none;
+}
+
+a:hover, nav a:hover, footer a:hover, .share-section a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #1d1d1d;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+.container, .container-titulo {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container, .container-titulo {
+        padding: 0 20px;
+    }
+}
+
+.container img, .featured-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+footer {
+    background-color: #FAB62B;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    font-size: 20px;
+}
+
+footer .fab.fa-facebook {
+    font-size: 25px;
+}
+
+.featured-image {
+    padding: 0 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.share-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 0px solid #e0e0e0;
+    text-align: center;
+}
+
+.share-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.share-section a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #800000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.share-section a:hover {
+    color: #a51717;
+}
